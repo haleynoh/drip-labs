@@ -175,10 +175,17 @@ footer {
   font-size: 1rem;
 }
 
+/* founders */
 .founders-section {
   padding: 2rem;
   text-align: center;
   color: #1d0d52;
+}
+
+.members-section {
+  padding: 2rem;
+  text-align: center;
+  color: #a9c4d1;
 }
 
 .section-title {
@@ -222,6 +229,56 @@ footer {
 .founder-photo.karen:hover {
   content: url("people/karenreal.JPG");
 }
+
+/* member */
+
+.members-section {
+  padding: 2rem;
+  text-align: center;
+  color: #72a1b8;
+}
+
+.members-title {
+  font-size: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.members-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 5rem;
+}
+
+.members-card {
+  max-width: 200px;
+}
+
+/* Default founder image style */
+.members-photo {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 7px solid #72a1b8;
+  margin-bottom: 1rem;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Hover swap using background-image trick */
+.members-photo.eric:hover {
+  content: url("people/ericreal.JPG");
+}
+
+.members-photo.jessica:hover {
+  content: url("people/jessicareal.png");
+}
+
+/* .members-photo.joyce:hover {
+  content: url("people/joycereal.png");
+} */
 
 /* dance */
 
