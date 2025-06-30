@@ -1,0 +1,317 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #1d0d52;
+}
+
+/* Header */
+header {
+  color: #1d0d52;
+  padding: 1rem 2rem;
+  text-align: center;
+}
+
+/* Navigation */
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.logo img {
+  height: 40px;
+}
+
+.nav-links a {
+  color: #1d0d52;
+  margin-left: 1.5rem;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 15 px;
+}
+
+.nav-links a:hover {
+  color: #f8f8f8;
+}
+
+/* Main content */
+main {
+  padding: 2rem;
+  max-width: 900px;
+  margin: 2rem auto;
+  border-radius: 10px;
+}
+.hero-section {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.bg-video {
+  position: fixed; /* This keeps it in place while scrolling */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -2;
+  filter: blur(8px); /* ← Add this line */
+  transform: scale(1.05); /* Optional: prevents visible edges after blur */
+}
+
+.overlay {
+  position: fixed; /* Also fixed to follow the video */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(225, 225, 225, 0.6);
+  z-index: -1;
+}
+
+.center-logo {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin-top: 150px;
+  /* justify-content: center; */
+  align-items: center;
+  text-align: center;
+}
+
+.hero-logo {
+  max-width: 400px;
+  width: 80%;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.tagline {
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #1d0d52;
+}
+
+/* New intro section */
+.intro-section {
+  background-color: #f8f8f8;
+  padding: 4rem 2rem;
+  color: #1d0d52;
+  text-align: center;
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.intro-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 800px;
+  margin: 0 auto;
+  font-size: 20px;
+  color: #000;
+}
+
+/* Reserve fixed width for rotating word */
+.rotating-word-wrapper {
+  display: inline-block;
+  width: 11ch; /* Adjust width to fit the longest word ("Interactive") */
+  text-align: center;
+}
+
+/* Style the rotating word */
+.rotating-word {
+  display: inline-block;
+  transition: opacity 1s ease-in-out;
+  opacity: 1;
+  color: white;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #1d0d52; /* Dark blue */
+  color: white;
+}
+
+.video-wrapper {
+  max-width: 800px;
+  margin: 3rem auto;
+  padding: 0 1rem;
+}
+
+/* Founders section */
+
+.people-section {
+  background-image: url("peoplebg.JPG");
+  background-size: cover;
+  background-position: center;
+  padding: 4rem 2rem;
+}
+
+.people-section .quote {
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 7rem;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.people-section .caption {
+  margin-top: 0.5rem;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.founders-section {
+  padding: 2rem;
+  text-align: center;
+  color: #1d0d52;
+}
+
+.section-title {
+  font-size: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.founders-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 5rem;
+}
+
+.founder-card {
+  max-width: 200px;
+}
+
+/* Default founder image style */
+.founder-photo {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 7px solid #1d0d52;
+  margin-bottom: 1rem;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Hover swap using background-image trick */
+.founder-photo.haley:hover {
+  content: url("people/haleyreal.JPG");
+}
+
+.founder-photo.jacob:hover {
+  content: url("people/jacobreal.png");
+}
+
+.founder-photo.karen:hover {
+  content: url("people/karenreal.JPG");
+}
+
+/* dance */
+
+.dance-section {
+  background-image: url("dancebg.JPG");
+  background-size: cover;
+  background-position: center;
+  padding: 4rem 2rem;
+  color: white;
+}
+
+.dance-section .quote {
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 7rem;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.dance-section .caption {
+  margin-top: 0.5rem;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.dance-caption {
+  display: flex;
+  justify-content: center; /* centers the box horizontally */
+  margin: 2rem auto; /* centers it if it has a set width */
+  max-width: 800px; /* optional: limits the width */
+  width: 100%;
+  color: #000;
+}
+
+.dance-caption p {
+  text-align: left; /* aligns text inside the box to the left */
+  font-size: 20px;
+}
+
+/* about */
+
+.quote-section {
+  background-image: url("aboutbg.JPG");
+  background-size: cover;
+  background-position: center;
+  padding: 4rem 2rem;
+  text-align: center;
+  color: #1d0d52; /* Optional: ensures text is visible on dark backgrounds */
+}
+
+.quote-section .quote {
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 7rem;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.quote-section .caption {
+  margin-top: 0.5rem;
+  text-align: center;
+  font-size: 1rem;
+  color: #1d0d52;
+}
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  padding: 2rem;
+  max-width: 1000px; /* or any smaller width */
+  margin: 0 auto; /* center it horizontally */
+  margin-bottom: 2rem;
+}
+
+.gallery-item img {
+  width: 100%;
+  aspect-ratio: 1 / 1; /* forces a square shape */
+  object-fit: cover; /* fills the square, cropping if necessary */
+  display: block;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* research */
+
+.research {
+  font-size: 40px;
+  margin: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}

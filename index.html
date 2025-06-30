@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Drip Labs</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>DRIP LABS</h1>
+    </header>
+
+    <nav>
+      <div class="nav-container">
+        <a href="index.html" class="logo">
+          <img src="driplabs.png" alt="DripLabs Logo" />
+        </a>
+        <div class="nav-links">
+          <a href="about.html">About</a>
+          <a href="people.html">People</a>
+          <a href="dance.html">Dance</a>
+          <a href="research.html">Research</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <video autoplay muted loop playsinline class="bg-video">
+        <source src="background.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <div class="overlay"></div>
+      <div class="center-logo">
+        <img src="driplabs.png" alt="DripLabs Logo" class="hero-logo" />
+        <h2 class="tagline">
+          Dance Research
+          <span class="rotating-word-wrapper">
+            <span class="rotating-word">Innovation</span>
+          </span>
+          Partnership
+        </h2>
+      </div>
+    </section>
+
+    <!-- Intro Section -->
+    <section class="intro-section">
+      <h2 class="section-title">Who We Are</h2>
+      <div class="intro-text">
+        <p>
+          Hello! We are a group of <em>talented</em> student researchers from
+          diverse academic and cultural backgrounds. We met through the CMU HCII
+          REU program, and we have a shared love for dance and innovation ❤️<br /><br /><br />
+        </p>
+      </div>
+
+      <h2 class="section-title">View Our Recent Highlights</h2>
+      <div class="video-wrapper">
+        <iframe
+          width="100%"
+          height="450"
+          src="https://www.youtube.com/embed/loNtSU3k2Hk"
+          title="DRIP Labs Video"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        >
+        </iframe>
+      </div>
+    </section>
+
+    <footer>&copy; 2025 All Rights Reserved</footer>
+
+    <script>
+      const words = ["Innovation", "International", "Insane", "Interactive"];
+      const rotatingWord = document.querySelector(".rotating-word");
+      let index = 0;
+
+      setInterval(() => {
+        // Fade out
+        rotatingWord.style.opacity = 0;
+
+        setTimeout(() => {
+          index = (index + 1) % words.length;
+          rotatingWord.textContent = words[index];
+          // Fade back in
+          rotatingWord.style.opacity = 1;
+        }, 1000); // Matches fade duration (1s)
+      }, 4000); // 4-second cycle
+    </script>
+
+    <script>
+      function setupHoverSwap(className, original, hover) {
+        const img = document.querySelector(`.${className}`);
+        if (!img) return;
+
+        const originalSrc = original;
+        const hoverSrc = hover;
+
+        img.addEventListener("mouseenter", () => {
+          img.src = hoverSrc;
+        });
+
+        img.addEventListener("mouseleave", () => {
+          img.src = originalSrc;
+        });
+      }
+
+      setupHoverSwap("haley", "people/haleyai.PNG", "people/haley.JPG");
+      setupHoverSwap("jacob", "people/jacobai.PNG", "people/jacob.png");
+      setupHoverSwap("karen", "people/karenai.PNG", "people/karen.JPG");
+    </script>
+  </body>
+</html>
