@@ -155,7 +155,7 @@ footer {
 /* Founders section */
 
 .people-section {
-  background-image: url("peoplebg.JPG");
+  background-image: url("peoplebg.jpg");
   background-size: cover;
   background-position: center;
   padding: 4rem 2rem;
@@ -219,15 +219,15 @@ footer {
 
 /* Hover swap using background-image trick */
 .founder-photo.haley:hover {
-  content: url("people/haleyreal.JPG");
+  content: url("people/haleyreal.jpg");
 }
 
 .founder-photo.jacob:hover {
-  content: url("people/jacobreal.png");
+  content: url("people/jacobreal.jpg");
 }
 
 .founder-photo.karen:hover {
-  content: url("people/karenreal.JPG");
+  content: url("people/karenreal.jpg");
 }
 
 /* member */
@@ -269,21 +269,21 @@ footer {
 
 /* Hover swap using background-image trick */
 .members-photo.eric:hover {
-  content: url("people/ericreal.JPG");
+  content: url("people/ericreal.jpg");
 }
 
 .members-photo.jessica:hover {
-  content: url("people/jessicareal.png");
+  content: url("people/jessicareal.jpg");
 }
 
-/* .members-photo.joyce:hover {
-  content: url("people/joycereal.png");
-} */
+.members-photo.joyce:hover {
+  content: url("people/joycereal.jpg");
+}
 
 /* dance */
 
 .dance-section {
-  background-image: url("dancebg.JPG");
+  background-image: url("dancebg.jpg");
   background-size: cover;
   background-position: center;
   padding: 4rem 2rem;
@@ -321,7 +321,7 @@ footer {
 /* about */
 
 .quote-section {
-  background-image: url("aboutbg.JPG");
+  background-image: url("aboutbg.jpg");
   background-size: cover;
   background-position: center;
   padding: 4rem 2rem;
