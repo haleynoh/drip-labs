@@ -155,7 +155,7 @@ footer {
 /* Founders section */
 
 .people-section {
-  background-image: url("peoplebg.jpg");
+  background-image: url("background/peoplebg.jpg");
   background-size: cover;
   background-position: center;
   padding: 4rem 2rem;
@@ -246,10 +246,12 @@ footer {
 }
 
 .members-grid {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 5rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columns */
+  gap: 3rem; /* Adjust spacing as needed */
+  justify-items: center; /* Center items horizontally */
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .members-card {
@@ -280,10 +282,25 @@ footer {
   content: url("people/joycereal.jpg");
 }
 
+.members-photo.alex:hover {
+  content: url("people/alexreal.jpg");
+}
+
+.members-photo.david:hover {
+  content: url("people/davidreal.jpg");
+}
+
+.members-photo.xander:hover {
+  content: url("people/xanderreal.jpg");
+}
+
+.members-photo.owen:hover {
+  content: url("people/owenlreal.jpg");
+}
 /* dance */
 
 .dance-section {
-  background-image: url("dancebg.jpg");
+  background-image: url("background/dancebg.jpg");
   background-size: cover;
   background-position: center;
   padding: 4rem 2rem;
@@ -321,7 +338,7 @@ footer {
 /* about */
 
 .quote-section {
-  background-image: url("aboutbg.jpg");
+  background-image: url("background/aboutbg.jpg");
   background-size: cover;
   background-position: center;
   padding: 4rem 2rem;
