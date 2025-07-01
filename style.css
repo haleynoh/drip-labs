@@ -102,6 +102,40 @@ main {
   color: #1d0d52;
 }
 
+/* logos */
+.logo-carousel {
+  overflow: hidden;
+  padding: 2rem 0;
+  background-color: #f8f8f8;
+}
+
+.logo-track {
+  display: flex;
+  width: max-content;
+  animation: scroll 43s linear infinite;
+  gap: 4rem;
+  align-items: center;
+}
+
+.logo-track img {
+  height: 60px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.logo-track img:hover {
+  transform: scale(1.2);
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
 /* New intro section */
 .intro-section {
   background-color: #f8f8f8;
@@ -177,7 +211,6 @@ footer {
 
 /* founders */
 .founders-section {
-  padding: 2rem;
   text-align: center;
   color: #1d0d52;
 }
@@ -190,12 +223,13 @@ footer {
 
 .section-title {
   font-size: 2rem;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+  margin-top: 3rem;
+  /* margin-bottom: 2rem; */
   text-align: center;
 }
 
 .founders-grid {
+  margin-top: 2rem;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -247,11 +281,19 @@ footer {
 
 .members-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* 4 columns */
-  gap: 3rem; /* Adjust spacing as needed */
-  justify-items: center; /* Center items horizontally */
-  max-width: 1200px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3rem;
+  justify-items: center;
+  max-width: 1000px;
   margin: 0 auto;
+}
+
+.members-row-centered {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  margin-top: 3rem;
+  flex-wrap: wrap;
 }
 
 .members-card {
@@ -383,9 +425,93 @@ footer {
 
 .research {
   font-size: 40px;
-  margin: 300px;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
+}
+
+/* labs */
+.lab-section {
+  padding: 4rem 2rem;
+  text-align: center;
+  background-color: #fefefe;
+}
+
+.lab-grid {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+.lab-item {
+  text-decoration: none;
+  color: #1d0d52;
+  font-weight: bold;
+  transition: transform 0.3s ease;
+}
+
+.lab-item:hover {
+  transform: scale(1.05);
+}
+.lab-item img {
+  width: 280px; /* Increased from 200px */
+  height: 280px; /* Increased from 200px */
+  object-fit: cover;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  display: block;
+  margin: 0 auto 1rem;
+}
+
+.lab-item p {
+  margin-top: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.lab-banner {
+  background-image: url("background/labsbg.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 4rem 2rem;
+  color: white;
+}
+
+.lab-banner .quote {
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 7rem;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.lab-banner .caption {
+  margin-top: 0.5rem;
+  text-align: center;
+  font-size: 1rem;
+}
+
+/* poker */
+.research {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.research strong {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #1d0d52;
+}
+
+.poker {
+  max-width: 100%;
+  width: 500px; /* or any size you like */
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
