@@ -219,7 +219,7 @@ footer {
 
 /* Hover swap using background-image trick */
 .founder-photo.haley:hover {
-  content: url("people/haleyreal.jpg");
+  content: url("people/haleyreal.JPG");
 }
 
 .founder-photo.jacob:hover {
@@ -227,7 +227,7 @@ footer {
 }
 
 .founder-photo.karen:hover {
-  content: url("people/karenreal.jpg");
+  content: url("people/karenreal.JPG");
 }
 
 /* member */
@@ -271,7 +271,7 @@ footer {
 
 /* Hover swap using background-image trick */
 .members-photo.eric:hover {
-  content: url("people/ericreal.jpg");
+  content: url("people/ericreal.JPG");
 }
 
 .members-photo.jessica:hover {
