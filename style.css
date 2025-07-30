@@ -402,6 +402,23 @@ footer {
   font-size: 1rem;
   color: #1d0d52;
 }
+
+.intro-hcii {
+  padding: 4rem 2rem;
+  text-align: center;
+  color: #1d0d52;
+  font-size: 1.2rem;
+  line-height: 1.7;
+  max-width: 800px;
+  margin: 0 auto 3rem;
+}
+
+.intro-hcii .section-title {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: #1d0d52;
+}
+
 .gallery {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -514,4 +531,51 @@ footer {
   height: auto;
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Research */
+.research-section {
+  background-image: url("background/researchbg.jpg");
+  background-size: cover;
+  padding: 4rem 2rem;
+}
+
+.research-section .quote {
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 7rem;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.research-section .caption {
+  margin-top: 0.5rem;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.poster-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* two columns */
+  gap: 3rem;
+  padding: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.poster-item img {
+  width: 100%;
+  max-width: 450px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  margin: 0 auto;
+}
+
+.poster-item p {
+  margin-top: 0.5rem;
+  font-weight: bold;
+  color: #1d0d52;
+  font-size: 1.1rem;
 }
